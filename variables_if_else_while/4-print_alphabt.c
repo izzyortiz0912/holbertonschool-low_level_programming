@@ -10,15 +10,14 @@ int main(void)
 {
 char character;
 
-character = 'a';
-/*It loops through alphabet*/
-while (character <= 'z')
+/*It loops through*/
+for (character = 'a'; character <= 'z'; character++)
+
+if (character != 'e' && character != 'q')
 {
-putchar(character); /*It prints each character*/
-	character++;
-
+putchar (character); /*It prints each character*/
 }
+putchar ('\n'); /*It adds a new line */
 
-putchar('\n'); /*It adds a new line */
-	return (0);
+return (0);
 }
