@@ -1,24 +1,28 @@
 #include <stdio.h>
 
 /**
-* A program that prints all possible combinations of single-digit numbers.
+* main - Prints all possible combinations of single-digit numbers.
 *
 * Return: Always 0 (indicating success)
 *
 */
 
 int main(void)
-
 {
 
 int n;
-for (n = 48; n <= 57; n++)
-putchar (n);
-if (n != 57) /* if n is not '9' */
+
+for (n = 0; n <= 9; n++)
 {
-putchar (',');
-putchar (' '); /* code */
+	putchar(n + '0');  /* convert number to character */
+	if (n != 9) /* if it's not the last number */
+
+	{
+	putchar(',');
+	putchar(' ');
+	}
 }
-putchar('\n');
-return (0);
+
+	putchar('\n');
+	return (0);
 }
