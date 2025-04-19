@@ -11,6 +11,7 @@ void more_numbers(void);
 int _putchar(char);
 int _isdigit(int);
 int mul(int a, int b);
+void print_numbers(void);
 
 
 #endif /*_MAIN_H_*/
